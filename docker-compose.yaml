@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  phpspec:
+    build: .
+    volumes:
+      - ./:/var/PHPSpec
+    working_dir: /var/PHPSpec
+    user: user
