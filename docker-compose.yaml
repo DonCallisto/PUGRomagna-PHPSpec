@@ -2,8 +2,9 @@ version: '2'
 
 services:
   phpspec:
-    build: .
+    build: docker/
     volumes:
       - ./:/var/PHPSpec
     working_dir: /var/PHPSpec
     user: user
+    tty: true
